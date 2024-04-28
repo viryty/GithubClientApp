@@ -1,1 +1,3 @@
 # GithubClientApp
+
+Developer: Maxim Baykin
