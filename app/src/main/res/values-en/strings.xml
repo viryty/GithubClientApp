@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github Client App</string>
+    <string name="downloads">Downloads</string>
+    <string name="search">Search</string>
+    <string name="info_message">Type your username in the search to get a list of repositories</string>
+    <string name="error_message">There\'s been an error!\\nTry searching again.</string>
+    <string name="search_hint">Enter your github username</string>
+    <string name="download_repo">Download the repository</string>
+    <string name="open_repo">Open a repository</string>
+    <string name="owner_avatar">Owner avatar</string>
+    <string name="not_downloads">You have not downloaded any repositories</string>
+    <string name="success_download">Repository downloaded!</string>
+</resources>

@@ -12,7 +12,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 @Module
 object RemoteModule {
-
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit =

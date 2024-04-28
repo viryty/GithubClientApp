@@ -8,4 +8,6 @@
     <string name="download_repo">Скачать репозиторий</string>
     <string name="open_repo">Открыть репозиторий</string>
     <string name="owner_avatar">Фото владельца</string>
+    <string name="not_downloads">Вы не загрузили ни одного репозитория</string>
+    <string name="success_download">Репозиторий скачен!</string>
 </resources>

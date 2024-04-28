@@ -18,10 +18,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.viryty.githubclient.R
 import com.viryty.githubclient.adapter.ReposAdapter
 import com.viryty.githubclient.data.repos.remote.Repo
 import com.viryty.githubclient.data.repos.remote.Status
+import com.viryty.githubclient.data.repos.room.Download
 import com.viryty.githubclient.databinding.FragmentSearchBinding
 import com.viryty.githubclient.listener.DownloadRepoListener
 import com.viryty.githubclient.listener.OpenWebListener
@@ -145,5 +147,17 @@ class SearchFragment : Fragment(), OpenWebListener, DownloadRepoListener {
             .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
             .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, name)
         dm.enqueue(request)
+
+        val download = Download(
+            owner = user,
+            nameRepo = repo
+        )
+        viewModel.insert(download)
+
+        Snackbar.make(
+            binding.parentLayout,
+            R.string.success_download,
+            Snackbar.LENGTH_SHORT
+        ).show()
     }
 }
