@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">GithubClientApp</string>
+    <string name="app_name">Github Client App</string>
+    <string name="downloads">Downloads</string>
+    <string name="search">Search</string>
+    <string name="info_message">Напишите имя пользователя в поиске, чтобы получить список репозиториев</string>
+    <string name="error_message">Произошла ошибка!\nПопробуйте повторить поиск.</string>
+    <string name="search_hint">Введите github username</string>
+    <string name="download_repo">Скачать репозиторий</string>
+    <string name="open_repo">Открыть репозиторий</string>
+    <string name="owner_avatar">Фото владельца</string>
 </resources>
